@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GitHub Users</string>
+
+    <string name="profile_picture">Profile picture</string>
+    <string name="user">User</string>
+    <string name="details">Details</string>
+    <string name="search">Search</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="bio">Bio</string>
+    <string name="email">Email</string>
+    <string name="blog">Blog</string>
+    <string name="html">Html</string>
+    <string name="notes">Notes</string>
+    <string name="notes_desc">Enter some notes here</string>
+    <string name="save">Save</string>
+    <string name="note_saved">Note saved!</string>
+
+    <!--==================================================-->
+    <!--==================== Network =====================-->
+    <!--==================================================-->
+    <string name="no_connection">No Connection</string>
+    <string name="back_online">Back Online</string>
+
+</resources>
