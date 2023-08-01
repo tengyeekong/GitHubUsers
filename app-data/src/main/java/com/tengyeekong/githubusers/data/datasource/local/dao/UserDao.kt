@@ -23,6 +23,9 @@ interface UserDao {
     @Query("SELECT * FROM User WHERE login = :username")
     fun getUser(username: String): Flow<UserModel>
 
+    @Query("SELECT * FROM User WHERE login = :username")
+    suspend fun getUserSuspend(username: String): UserModel?
+
     @Query("UPDATE User SET note = :note WHERE login = :username")
     suspend fun updateNote(username: String, note: String)
 }

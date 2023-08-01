@@ -41,7 +41,7 @@ class UserRepositoryImpl @Inject constructor(
                 userApi.getUserDetails(username)
 
             override suspend fun saveResponseData(response: UserDetailsResponse) {
-                userDao.updateUser(response.mapToRoomEntity())
+                userDao.updateUser(response.mapToRoomEntity().copy(note = userDao.getUserSuspend(username)?.note))
             }
 
             override fun retrieveLocalData(): Flow<User> =
